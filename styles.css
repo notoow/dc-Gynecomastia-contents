@@ -2,7 +2,7 @@
 .source-nav{display:flex;gap:12px;align-items:stretch;min-height:58px;border-bottom:1px solid var(--rule)}
 .source-nav a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:58px;padding:0 16px;border-bottom:3px solid transparent;text-decoration:none;color:var(--muted);font-size:13px;white-space:nowrap}
 .source-nav a::before{content:"";width:22px;height:22px;flex:0 0 22px;background:center/contain no-repeat}
-.source-nav a[href="index.html"]::before{background-image:url("assets/platform-dc.svg")}
+.source-nav a[href="index.html"]::before{background-image:url("assets/platform-dc.png")}
 .source-nav a[href="youtube.html"]::before{background-image:url("assets/platform-youtube.svg")}
 .source-nav a[href="instagram.html"]::before{background-image:url("assets/platform-instagram.svg")}
 .source-nav a:hover{color:var(--ink);background:#f1eee7}
