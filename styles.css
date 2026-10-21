@@ -15,6 +15,7 @@ a{color:inherit;text-underline-offset:4px}
 button:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:5px}
 .page{max-width:1920px;margin:auto;padding:0 36px}
 .masthead{min-height:96px;display:flex;align-items:center;gap:28px;padding:18px 0;border-bottom:1px solid var(--gold)}
+.home-link{display:block;flex-shrink:0}.home-link:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
 .logo{width:190px;height:auto;display:block;flex-shrink:0}
 .page-label{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
 h1{font-size:16px;letter-spacing:-.5px;font-weight:700;margin:0}
