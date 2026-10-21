@@ -1,0 +1,15 @@
+<section class="comment-editor" aria-labelledby="editor-title">
+  <div class="editor-heading"><div><h2 id="editor-title">댓글 이미지 만들기</h2><p>직접 입력한 편집용 이미지 · 아래 실제 캡처와 별도로 저장됩니다.</p></div><button id="editor-download" type="button">PNG 다운로드 ↓</button></div>
+  <div class="editor-layout">
+    <div class="editor-controls">
+      <label for="editor-handle">아이디</label><div class="input-action"><input id="editor-handle" maxlength="60" value="@viewer_4821"><button id="random-handle" type="button">임의 아이디 생성</button></div>
+      <div class="editor-row"><label>프로필 사진<input id="editor-avatar" type="file" accept="image/*"></label><button id="reset-avatar" type="button">기본 프로필</button></div>
+      <label for="editor-text">댓글 내용</label><textarea id="editor-text" rows="4" maxlength="4000" placeholder="이미지로 만들 댓글을 입력하세요."></textarea>
+      <div class="editor-row"><label>작성 시점<input id="editor-date" value="9일 전" maxlength="30"></label><label>답글 수<input id="editor-replies" type="number" value="0" min="0" max="99999"></label></div>
+      <fieldset class="theme-options"><legend>이미지 테마</legend><label><input type="radio" name="editor-theme" value="dark" checked>어둡게</label><label><input type="radio" name="editor-theme" value="light">밝게</label></fieldset>
+      <label for="editor-opacity">배경 불투명도 <output id="opacity-value">100%</output></label><input id="editor-opacity" type="range" min="0" max="100" value="100"><label class="transparent-option"><input id="editor-transparent" type="checkbox">투명 배경</label>
+      <div class="editor-row"><label>이미지 너비<select id="editor-width"><option value="640">640 px</option><option value="960" selected>960 px</option><option value="1280">1280 px</option></select></label><label>글자 크기<select id="editor-font"><option value="20">20 px</option><option value="24" selected>24 px</option><option value="28">28 px</option><option value="32">32 px</option></select></label></div>
+    </div>
+    <div class="editor-preview"><div class="checkerboard"><canvas id="editor-canvas" aria-label="편집용 댓글 이미지 미리보기"></canvas></div><p id="editor-status" role="status">내용을 입력하면 바로 미리보기에 반영됩니다. PNG는 2배 해상도로 저장됩니다.</p></div>
+  </div>
+</section>
