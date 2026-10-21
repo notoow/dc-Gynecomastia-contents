@@ -1,15 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="프로필, 댓글, 테마와 투명 배경을 자유롭게 편집하는 댓글 이미지 만들기"><title>댓글 이미지 만들기 · 하이스트</title><link rel="icon" href="assets/highst-favicon.png" type="image/png"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="comment-editor.css"><script src="comment-editor.js" defer></script><script src="platform.js" defer></script></head>
+<body><a class="skip-link" href="#editor-main">편집기로 이동</a><div class="page">
+<header class="masthead"><img class="logo" src="assets/highst-logo.png" alt="하이스트 비뇨의학과" width="1065" height="302"><div class="page-label"><h1>댓글 이미지 만들기</h1><span>댓글을 이미지로, 간편하게</span></div><div class="header-actions"><a class="group-button" href="youtube.html">유튜브 Q&A</a><a class="editor-link" href="comment-editor.html" aria-current="page">댓글 이미지 만들기</a></div></header>
+<main id="editor-main">
 <section class="comment-editor" aria-labelledby="editor-title">
-  <div class="editor-heading"><div><h2 id="editor-title">댓글 이미지 만들기</h2><p>직접 입력한 편집용 이미지 · 아래 실제 캡처와 별도로 저장됩니다.</p></div><button id="editor-download" type="button">PNG 다운로드 ↓</button></div>
+  <div class="editor-heading"><div><h2 id="editor-title">댓글 이미지 만들기</h2><p>댓글을 입력하고 디자인을 조정해 고해상도 PNG로 저장하세요.</p></div><button id="editor-download" type="button">PNG 다운로드 ↓</button></div>
   <div class="editor-layout">
     <div class="editor-controls">
+      <fieldset class="theme-options platform-options"><legend>플랫폼 스타일</legend><label><input type="radio" name="editor-platform" value="youtube" checked>유튜브</label><label><input type="radio" name="editor-platform" value="instagram">인스타</label><label><input type="radio" name="editor-platform" value="dc">디시</label></fieldset>
       <label for="editor-handle">아이디</label><div class="input-action"><input id="editor-handle" maxlength="60" value="@viewer_4821"><button id="random-handle" type="button">임의 아이디 생성</button></div>
-      <div class="editor-row"><label>프로필 사진<input id="editor-avatar" type="file" accept="image/*"></label><button id="reset-avatar" type="button">기본 프로필</button></div>
+      <div class="editor-row"><label>프로필 사진<input id="editor-avatar" type="file" accept="image/*"></label></div>
+      <label for="avatar-mode">프로필 스타일</label><select id="avatar-mode"><option value="default">기본</option><option value="random">랜덤 생성</option><option value="original">업로드 / 불러온 원본</option><option value="mosaic">모자이크</option><option value="blur">블러</option></select>
+      <button id="random-avatar" type="button" class="group-button">랜덤 프로필 새로 만들기</button>
+      <p class="avatar-help">모자이크·블러는 업로드하거나 불러온 사진에 적용됩니다. 사진이 없으면 랜덤 프로필에 적용됩니다.</p>
       <label for="editor-text">댓글 내용</label><textarea id="editor-text" rows="4" maxlength="4000" placeholder="이미지로 만들 댓글을 입력하세요."></textarea>
-      <div class="editor-row"><label>작성 시점<input id="editor-date" value="9일 전" maxlength="30"></label><label>답글 수<input id="editor-replies" type="number" value="0" min="0" max="99999"></label></div>
+      <div class="editor-row"><label>좋아요 수<input id="editor-likes" type="number" value="0" min="0" max="99999" step="1"><input id="editor-likes-slider" aria-label="좋아요 수 슬라이더" type="range" value="0" min="0" max="99999" step="1"></label><label>답글 수<input id="editor-replies" type="number" value="0" min="0" max="99999" step="1"><input id="editor-replies-slider" aria-label="답글 수 슬라이더" type="range" value="0" min="0" max="99999" step="1"></label></div>
+      <div class="editor-row"><label>작성 시점<input id="editor-date" value="9일 전" maxlength="30"></label></div>
+      <label for="editor-date-slider">작성 시점 선택 <output id="date-slider-value">9일 전</output></label>
+      <input id="editor-date-slider" type="range" min="0" max="74" step="1" value="32" aria-valuetext="9일 전" aria-describedby="date-slider-help">
+      <div class="date-slider-labels" id="date-slider-help"><span>방금</span><span>시간 · 일 · 개월 · 년</span><span>10년 전</span></div>
       <fieldset class="theme-options"><legend>이미지 테마</legend><label><input type="radio" name="editor-theme" value="dark" checked>어둡게</label><label><input type="radio" name="editor-theme" value="light">밝게</label></fieldset>
       <label for="editor-opacity">배경 불투명도 <output id="opacity-value">100%</output></label><input id="editor-opacity" type="range" min="0" max="100" value="100"><label class="transparent-option"><input id="editor-transparent" type="checkbox">투명 배경</label>
       <div class="editor-row"><label>이미지 너비<select id="editor-width"><option value="640">640 px</option><option value="960" selected>960 px</option><option value="1280">1280 px</option></select></label><label>글자 크기<select id="editor-font"><option value="20">20 px</option><option value="24" selected>24 px</option><option value="28">28 px</option><option value="32">32 px</option></select></label></div>
     </div>
-    <div class="editor-preview"><div class="checkerboard"><canvas id="editor-canvas" aria-label="편집용 댓글 이미지 미리보기"></canvas></div><p id="editor-status" role="status">내용을 입력하면 바로 미리보기에 반영됩니다. PNG는 2배 해상도로 저장됩니다.</p></div>
+    <div class="editor-preview"><div class="checkerboard"><canvas id="editor-canvas" aria-label="편집용 댓글 이미지 미리보기"></canvas></div><p id="editor-status" role="status">내용을 입력하면 바로 미리보기에 반영됩니다. PNG는 2배 해상도로 저장됩니다.</p><details id="editor-export" hidden><summary>저장이 안 되면 생성 이미지에서 우클릭 / 길게 눌러 저장</summary><img id="editor-export-image" alt="저장할 편집용 PNG 이미지" style="max-width:100%"></details></div>
   </div>
 </section>
+</main><footer class="footer"><span>직접 편집한 이미지 · PNG 2배 해상도 저장</span><a href="index.html">촬영 노트로 돌아가기 ↗</a></footer></div></body></html>

@@ -2,7 +2,8 @@
 
 // Shared platform navigation and the optional browser tab-group companion.
 (() => {
-  const platform = location.pathname.endsWith('youtube.html') ? '유튜브'
+  const platform = location.pathname.endsWith('comment-editor.html') ? '편집기'
+    : location.pathname.endsWith('youtube.html') ? '유튜브'
     : location.pathname.endsWith('instagram.html') ? '인스타' : '디시';
   const nav = document.querySelector('.source-nav');
   if (nav) {

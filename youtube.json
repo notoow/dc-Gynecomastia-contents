@@ -1,7 +1,7 @@
 {
   "verifiedAt": "2026-10-21",
   "channel": "닥터 황의 인성수업",
-  "scope": "관련성순 목록에서 최근~약 5개월 전 게시 댓글 중 여유증 Q&A 19개 선별. 전체 댓글 전수 수집 아님.",
+  "scope": "기존 Q&A 캡처 19개와 사용자 제공 재미·리액션·감각 질문·칭찬 댓글 5개. 전체 댓글 전수 수집 아님.",
   "comments": [
     {
       "id": "UgyH1JwD1kTHZ3E9FR94AaABAg",
@@ -230,6 +230,134 @@
       "replyLabel": "답글 1개",
       "video": "어디서도 알려주지 않는 여유증수술 부작용",
       "url": "https://www.youtube.com/watch?v=1eKJuyYwdzc&lc=Ugz2lAPECoOSaDT7xQJ4AaABAg"
+    },
+    {
+      "id": "supplied-jc7611",
+      "author": "@jc7611",
+      "publishedLabel": "1개월 전",
+      "body": "가능",
+      "replyLabel": "답글 0개",
+      "category": "재미·리액션",
+      "title": "한마디 댓글 “가능”에 원장님 리액션",
+      "focus": "짧은 리액션 컷 후보. 영상 맥락은 확인 후 사용하고, 댓글만으로 의미를 단정하지 않기.",
+      "url": "https://www.youtube.com/@jc7611",
+      "video": "영상 정보 미제공",
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 미확보",
+      "sourceLinkLabel": "작성자 채널"
+    },
+    {
+      "id": "supplied-beef-n6x",
+      "author": "@소고기-n6x",
+      "publishedLabel": "2개월 전",
+      "body": "콧털이 개빨리 자란다 ㅡ 정수리탈모가 시작된다.  타이밍이 비슷함. dht영향임",
+      "replyLabel": "답글 1개",
+      "category": "재미·리액션",
+      "title": "콧털은 자라는데 머리카락은 빠진다?",
+      "focus": "콧털·수염은 자라고 정수리는 빠진다는 대비로 도입. DHT 관련 주장은 댓글의 주장으로 제시하고 원장님에게 사실 여부를 묻기.",
+      "url": "https://www.youtube.com/watch?v=WeM-Def0_es",
+      "video": "탈모약, 잘못 먹으면 큰일 나는 이유",
+      "replies": [
+        {
+          "author": "@DCT-y4y",
+          "publishedLabel": "2개월 전",
+          "body": "수염과 눈썹도 빨리 자람 😢"
+        }
+      ],
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 미확보",
+      "sourceLinkLabel": "관련 영상"
+    },
+    {
+      "id": "supplied-shin-g9w",
+      "author": "@신동희-g9w",
+      "publishedLabel": "3개월 전",
+      "body": "수술하면 젖꼭지 성감대가 사라지나요?",
+      "replyLabel": "답글 1개",
+      "category": "감각·성감 Q&A",
+      "title": "수술하면 젖꼭지 성감대가 사라지나요?",
+      "focus": "직설적인 질문을 도입으로 사용. 촉각 변화와 성감 변화가 같은 것인지, 회복 경과와 개인차를 원장님에게 구분해 묻기.",
+      "url": "https://www.youtube.com/watch?v=PiPqFh8OH-k",
+      "video": "여유증에 관한 모든 것, 전부 답해드립니다! #여유증 #여유증수술 #여유증수술후기",
+      "replies": [
+        {
+          "author": "@insungclass",
+          "publishedLabel": "3개월 전",
+          "body": "수술부위 주변 신경들이 일부 손상되면서 일시적이지만 이상감각들이 발생할 수 있습니다. 통상적으로 수술 후 3-6개월 정도 경과되면서 이러한 부분들이 개선됩니다."
+        }
+      ],
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 미확보",
+      "sourceLinkLabel": "관련 영상"
+    },
+    {
+      "id": "supplied-acorn7777",
+      "author": "@acorn7777",
+      "publishedLabel": "4개월 전",
+      "body": "썸네일 여자인 나랑 왜 이렇게 비슷하냐",
+      "replyLabel": "답글 0개",
+      "likes": 3,
+      "category": "재미·리액션",
+      "title": "“썸네일이 나랑 비슷한데?”",
+      "focus": "공감·웃음 리액션 컷 후보. 원본 영상과 썸네일을 확인한 뒤 연결하고, 특정인의 몸을 조롱하는 방향은 피하기.",
+      "url": "https://www.youtube.com/@acorn7777",
+      "video": "영상 정보 미제공",
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 미확보",
+      "sourceLinkLabel": "작성자 채널"
+    },
+    {
+      "id": "supplied-hyeol",
+      "author": "@혈",
+      "publishedLabel": "1년 전",
+      "body": "원장님 설명이 전문적이면서도 믿음 가네요.",
+      "replyLabel": "답글 0개",
+      "category": "공감·칭찬",
+      "title": "“전문적이면서도 믿음 가네요”",
+      "focus": "진지한 설명 뒤 분위기를 풀거나 엔딩 감사 인사에 사용. 원장님의 짧은 감사 리액션과 연결.",
+      "url": "https://www.youtube.com/@%ED%98%88",
+      "video": "영상 정보 미제공",
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 미확보",
+      "sourceLinkLabel": "작성자 채널"
+    },
+    {
+      "id": "supplied-khs2750",
+      "author": "@khs2750",
+      "publishedLabel": "3개월 전",
+      "body": "https://youtube.com/shorts/mUU-bzHhDzg?si=hmZJ1CcjQOUMkoHP 원래 이영상처럼 지방흡입할 때 격하게 하나요?....",
+      "replyLabel": "답글 1개",
+      "category": "마취·수술",
+      "title": "지방흡입할 때 원래 이렇게 격하게 하나요?",
+      "focus": "댓글에 첨부된 영상에 대한 원장님의 첫 반응으로 도입. 실제 수술 동작의 이유와 영상만으로 판단하기 어려운 점을 질문.",
+      "url": "https://www.youtube.com/@khs2750",
+      "video": "원문 영상 확인 중 · 댓글에 다른 쇼츠 링크 첨부",
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 확보 중",
+      "sourceLinkLabel": "작성자 채널",
+      "referencedVideo": "https://youtube.com/shorts/mUU-bzHhDzg?si=hmZJ1CcjQOUMkoHP"
+    },
+    {
+      "id": "supplied-user-wk4hanble",
+      "author": "@user-wk4hanble",
+      "publishedLabel": "3개월 전",
+      "body": "여유증은 아닌데 젖꼭지가 많이 튀어나온 사람인데 젖꼭지도 수술 가능한가요",
+      "replyLabel": "답글 1개",
+      "category": "감량·진단",
+      "title": "여유증 없이 유두만 돌출돼도 수술 가능한가요?",
+      "focus": "유선으로 인한 돌출과 유두 자체의 크기를 어떻게 구분하는지, 각각의 상담·수술 방법을 질문.",
+      "url": "https://www.youtube.com/watch?v=C_yO4zoZcjk&lc=Ugw-hsP7B67tANO714Z4AaABAg",
+      "video": "아래로 쏠린 가슴 라인, 여유증 수술로 달라졌습니다 ㅣ 여유증 수술 리뷰",
+      "sourceType": "user-provided",
+      "sourceLabel": "사용자 제공 원문 · 실제 캡처 확보 중",
+      "sourceLinkLabel": "원문 댓글",
+      "replies": [
+        {
+          "author": "@insungclass",
+          "publishedLabel": "3개월 전",
+          "body": "안녕하세요. 황인성 원장입니다. 유선 때문에 유두가 더 솟아올라보일 수 있습니다 어떤 부분이 원인인지는 상태 확인 후 말씀드릴 수 있고 만일 유두 자체의 문제라면 유두 축소 단독으로도 해결 가능합니다"
+        }
+      ]
     }
   ]
 }
