@@ -4,7 +4,10 @@
     "diagnosis": {"title": "Mayo Clinic · 여유증 진단과 치료", "url": "https://www.mayoclinic.org/diseases-conditions/gynecomastia/diagnosis-treatment/drc-20351799"},
     "symptoms": {"title": "Mayo Clinic · 여유증 증상과 원인", "url": "https://www.mayoclinic.org/diseases-conditions/gynecomastia/symptoms-causes/syc-20351793"},
     "recovery": {"title": "ASPS · 여유증 수술 후 회복", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/recovery"},
-    "risks": {"title": "ASPS · 여유증 수술의 위험과 합병증", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/safety"}
+    "risks": {"title": "ASPS · 여유증 수술의 위험과 합병증", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/safety"},
+    "cost": {"title": "ASPS · 여유증 수술 비용의 구성", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/cost"},
+    "preparation": {"title": "WHO · 수술 부위 감염 예방과 제모", "url": "https://www.who.int/news-room/questions-and-answers/item/surgical-site-infections"},
+    "nipple": {"title": "Cleveland Clinic · 유두의 구조와 반응", "url": "https://my.clevelandclinic.org/health/body/nipple"}
   },
   "posts": [
     {
@@ -90,6 +93,48 @@
       "publishedAt": "2026-10-19", "context": "3년 전 수술 후 감량해도 유두 쪽 돌출이 남아 재수술했다는 경험담.",
       "answer": "다시 돌출됐다고 모두 재발은 아닙니다. 남은 유선·지방·흉터조직·유두 자체를 구분해 재수술을 판단합니다.",
       "references": ["recovery", "risks"]
+    },
+    {
+      "id": 51966, "category": "경험담·러닝", "title": "슈펄 젖떼고 러닝하니깐",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=51966",
+      "publishedAt": "2026-10-14", "context": "수술 후 얇은 반팔을 입고 달리며 자신감이 생겼다는 경험담. 수술일부터 달리기 재개까지의 기간은 기재되지 않음.",
+      "answer": "수술 후 달리기는 상처·붓기·통증에 따라 재개 시점이 다릅니다. 회복 확인 후 운동 강도를 천천히 올리세요.",
+      "references": ["recovery"]
+    },
+    {
+      "id": 52035, "category": "비용·출근", "title": "여유증 봐주실분",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52035",
+      "publishedAt": "2026-10-18", "context": "어릴 때부터 나온 가슴으로 수술을 고려하며 실손보험 없이 드는 비용과 금요일 수술 후 월요일 출근 가능 여부를 질문.",
+      "answer": "비용은 수술 범위·검사 등에 따라 달라집니다. 금요일 수술 후 월요일 출근은 업무 강도와 회복 상태를 보고 판단합니다.",
+      "references": ["diagnosis", "recovery", "cost"]
+    },
+    {
+      "id": 51907, "category": "경험담·수술 준비", "title": "수술 전에 겨드랑이 털 밀고 가야됨?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=51907",
+      "publishedAt": "2026-10-12", "context": "길면 가위로 정리하라는 안내에 어느 정도부터 긴 것인지 웃으며 질문.",
+      "answer": "털 길이보다 중요한 건 피부에 상처를 내지 않는 겁니다. 임의로 면도하지 말고 수술 병원의 제모 안내를 따르세요.",
+      "references": ["preparation"]
+    },
+    {
+      "id": 51922, "category": "경험담·수술 흔적", "title": "개씹만족",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=51922",
+      "publishedAt": "2026-10-13", "context": "아직 스킨본드를 제거하지 않았는데 여자친구는 수술 사실도 모른다는 짧은 경험담.",
+      "answer": "“여자친구도 모른다”는 건 작성자분의 경험이죠. 수술 흔적이나 변화는 개인차가 있어 모두 같다고 보장할 순 없습니다.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52053, "category": "경험담·감각", "title": "수술4일차... 이느낌 뭐지..",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52053",
+      "publishedAt": "2026-10-19", "context": "수술 4일 뒤 출근해 누군가 유두를 문지르는 듯한 느낌을 생생한 표현으로 묘사하며 회복 과정인지 질문.",
+      "answer": "누가 만지는 듯한 느낌도 회복 중 감각 변화일 수 있습니다. 다만 통증·붓기가 심해지면 수술 병원에서 확인하세요.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52086, "category": "경험담·유륜 모양", "title": "그 유륜이랑 꼭지 춥거나 자극시키면 늘어낫다 타이트해졋다하자나?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52086",
+      "publishedAt": "2026-10-20", "context": "수술하면 추위나 자극을 받았을 때처럼 유륜이 항상 타이트한 상태로 유지되는지 질문.",
+      "answer": "추울 때의 모양을 그대로 고정하는 수술은 아닙니다. 수술 후 윤곽과 유두·유륜의 자극 반응은 나눠서 봐야 합니다.",
+      "references": ["diagnosis", "nipple"]
     }
   ]
 }

@@ -25,6 +25,7 @@ h1{font-size:16px;letter-spacing:-.5px;font-weight:700;margin:0}
 .open-all:hover{background:#4b4234;border-color:#4b4234}
 .index-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:38px;font-size:11px;color:var(--muted)}
 .index-meta p{margin:0}.count{margin-left:12px;color:var(--gold)}
+.gallery-link{color:var(--ink);margin-right:auto;text-decoration:none;white-space:nowrap;padding:8px 0}.gallery-link:hover{text-decoration:underline}.index-meta{flex-wrap:wrap}
 .month-controls{display:flex;align-items:center;gap:8px}.month-controls select{font:inherit;color:var(--ink);background:transparent;border:0;padding:5px 14px 5px 0;cursor:pointer}.month-controls select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}.month-controls .count{margin-left:4px}
 .questions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;min-height:calc(100svh - 200px);grid-auto-rows:1fr}.questions.short-list{min-height:0;grid-auto-rows:auto}
 .question{min-width:0;border-top:1px solid var(--rule);padding:10px 0;display:flex;flex-direction:column;align-items:stretch}.question[hidden]{display:none}
