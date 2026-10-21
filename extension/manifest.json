@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "하이스트 촬영 노트 · 탭 그룹",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "하이스트 촬영 노트의 현재 질문 목록을 새 브라우저 탭 그룹으로 엽니다.",
   "permissions": ["tabGroups"],
   "background": {"service_worker": "background.js"},

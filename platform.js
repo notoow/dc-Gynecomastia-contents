@@ -75,7 +75,7 @@
     clearTimeout(timer);
     groupButton.disabled = false;
     feedback.textContent = event.data.ok
-      ? `‘${event.data.title}’ 새 그룹에 ${event.data.count}개를 열었습니다.`
+      ? `‘${event.data.title}’ 새 그룹에 ${event.data.count}개 탭을 준비했습니다. 3~6초 간격으로 순서대로 불러옵니다.`
       : `그룹을 만들지 못했습니다. ${event.data.error || '확장을 확인하고 다시 시도해주세요.'}`;
   });
 })();

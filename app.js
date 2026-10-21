@@ -8,7 +8,13 @@ const status = document.getElementById('status');
 const notice = document.getElementById('popup-notice');
 const blockedList = document.getElementById('blocked-links');
 
-document.getElementById('open-all').addEventListener('click', () => {
+let opening = false;
+const openAllButton = document.getElementById('open-all');
+openAllButton.addEventListener('click', async () => {
+  if (opening) return;
+  opening = true;
+  openAllButton.disabled = true;
+  const pending = [];
   const links = allLinks.filter(link => !link.closest('article').hidden);
   const blocked = [];
   let opened = 0;
@@ -23,9 +29,10 @@ document.getElementById('open-all').addEventListener('click', () => {
           blocked.push(link);
           continue;
         }
-        // Detach before navigating to an external page; retain only our handle.
+        tab.document.title = '원문 로딩 대기';
+        tab.document.body.textContent = '3~6초 간격으로 순서대로 불러옵니다. 이 탭을 닫으면 건너뜁니다.';
         tab.opener = null;
-        tab.location.replace(url);
+        pending.push({tab, url});
         openedTabs.set(url, tab);
       }
       opened++;
@@ -46,9 +53,18 @@ document.getElementById('open-all').addEventListener('click', () => {
     blockedList.append(item);
   }
   notice.hidden = blocked.length === 0;
-  status.textContent = blocked.length
-    ? `${links.length}개 중 ${opened}개 열림 · ${blocked.length}개 차단됨. 팝업 허용 후 다시 눌러주세요.`
-    : `${opened}개 게시글 탭이 준비되었습니다.`;
+  let loaded = 0;
+  try {
+    for (let i = 0; i < pending.length; i++) {
+      status.textContent = `순차 로딩 ${loaded}/${pending.length} · 3~6초 간격 · 목록 페이지를 열어 두세요.`;
+      if (i > 0) await new Promise(resolve => setTimeout(resolve, 3000 + Math.floor(Math.random() * 3001)));
+      const {tab, url} = pending[i];
+      try {
+        if (!tab.closed && tab.location.href === 'about:blank') { tab.location.replace(url); loaded++; }
+      } catch { /* Skip tabs closed or navigated manually. */ }
+    }
+    status.textContent = `${loaded}개 로딩 요청 완료 · 기존 탭 ${opened - pending.length}개 재사용${blocked.length ? ` · 팝업 차단 ${blocked.length}개` : ''}`;
+  } finally { opening = false; openAllButton.disabled = false; }
 });
 
 function filterMonth() {
