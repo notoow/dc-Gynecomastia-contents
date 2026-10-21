@@ -110,7 +110,7 @@
     lines.forEach((line, i) => ctx.fillText(line, 98, 51 + i * lineHeight));
     const y = 63 + lines.length * lineHeight;
     const replies = Number(byId('editor-replies-slider').value);
-    const likes = byId('editor-likes-slider').value;
+    const likes = String(Math.max(0, Math.min(99999, Math.floor(Number(byId('editor-likes').value) || 0))));
     if (platform === 'instagram') {
       ctx.font = `bold 16px ${fontFamily}`; ctx.fillStyle = muted;
       ctx.fillText(`좋아요 ${likes}개    답글 달기    답글 ${replies}개 보기`, 98, y + 8, width - 145);
