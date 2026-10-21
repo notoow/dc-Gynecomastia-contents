@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="하이스트 비뇨의학과 황인성 원장의 여유증 Q&A 촬영 노트. 실제 게시글 원문과 예상 답변을 한눈에 확인합니다.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>여유증 Q&A · 하이스트 황인성 원장</title>
+  <link rel="icon" href="assets/highst-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#questions">질문 목록으로 이동</a>
+  <div class="page">
+    <header class="masthead">
+      <img class="logo" src="assets/highst-logo.png" alt="하이스트 비뇨의학과" width="1065" height="302">
+      <div class="page-label"><h1>여유증 Q&A</h1><span>황인성 원장</span></div>
+      <button class="open-all" id="open-all" type="button">게시글 전체 열기 <span aria-hidden="true">↗</span></button>
+    </header>
+    <div class="index-meta"><p>디시인사이드 여유증 갤러리 <span class="count">12문항</span></p><p>원문 제목 · 예상 답변 초안</p></div>
+    <aside class="popup-notice" id="popup-notice" aria-labelledby="popup-heading" hidden>
+      <div><strong id="popup-heading">브라우저가 일부 새 탭을 차단했습니다.</strong><p>주소창의 팝업 차단 아이콘에서 이 사이트를 허용한 뒤 다시 눌러주세요. 아래 링크로 개별 열기도 가능합니다.</p></div>
+      <button type="button" class="text-button" id="dismiss-notice">닫기</button>
+      <ul id="blocked-links"></ul>
+    </aside>
+    <main id="questions" class="questions" aria-label="실제 게시글과 예상 답변">
+{{POSTS}}
+    </main>
+    <footer class="footer">
+      <span>원문 확인 {{VERIFIED_AT}} · 예상 답변은 원장님 검토 전 촬영용 초안입니다.</span>
+      <button class="text-button" id="show-sources" type="button">참고 자료 / 이용 안내 <span aria-hidden="true">↗</span></button>
+    </footer>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </div>
+  <dialog id="sources-dialog" aria-labelledby="sources-heading">
+    <div class="dialog-header"><h2 id="sources-heading">참고 자료 / 이용 안내</h2><button class="text-button" id="close-sources" type="button">닫기 <span aria-hidden="true">×</span></button></div>
+    <p>게시글 제목과 링크는 원문을 확인해 수록했습니다. 예상 답변은 일반 의학 자료를 참고한 촬영용 초안이며 황인성 원장님의 확정 답변이 아닙니다. 사진이나 게시글만으로 개인의 진단을 확정하지 않습니다.</p>
+    <ul class="reference-list">{{REFERENCES}}</ul>
+    <p>‘원문’ 또는 게시글 제목을 누르면 해당 글이 새 탭에서 열립니다. ‘게시글 전체 열기’는 브라우저에서 이 사이트의 팝업을 허용해야 모두 열립니다. 다시 누르면 열어둔 탭을 가능한 범위에서 재사용합니다.</p>
+    <p>원문에는 신체 사진과 비속어가 포함될 수 있습니다. 게시글이 수정·삭제되면 링크의 내용도 바뀔 수 있습니다.</p>
+  </dialog>
+</body>
+</html>

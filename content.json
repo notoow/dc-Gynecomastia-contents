@@ -1,0 +1,95 @@
+{
+  "verifiedAt": "2026-10-21",
+  "references": {
+    "diagnosis": {"title": "Mayo Clinic · 여유증 진단과 치료", "url": "https://www.mayoclinic.org/diseases-conditions/gynecomastia/diagnosis-treatment/drc-20351799"},
+    "symptoms": {"title": "Mayo Clinic · 여유증 증상과 원인", "url": "https://www.mayoclinic.org/diseases-conditions/gynecomastia/symptoms-causes/syc-20351793"},
+    "recovery": {"title": "ASPS · 여유증 수술 후 회복", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/recovery"},
+    "risks": {"title": "ASPS · 여유증 수술의 위험과 합병증", "url": "https://www.plasticsurgery.org/cosmetic-procedures/gynecomastia-surgery/safety"}
+  },
+  "posts": [
+    {
+      "id": 52064, "category": "자가진단", "title": "이거 여유증임??",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52064",
+      "publishedAt": "2026-10-19", "context": "사진을 올려 여유증 여부를 묻는 게시글. 텍스트 본문 없음.",
+      "answer": "사진만으로 지방과 유선조직을 구분하긴 어렵습니다. 진찰 후 필요하면 초음파 등으로 확인합니다.",
+      "references": ["diagnosis"]
+    },
+    {
+      "id": 52063, "category": "운동·치료", "title": "진성여유증은 뭘해도안없어짐???",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52063",
+      "publishedAt": "2026-10-19", "context": "초기라고 생각하는 여유증이 없어질 수 있는지 질문.",
+      "answer": "운동은 지방을 줄여도 유선조직을 직접 없애진 못합니다. 초기에는 원인과 경과를 보고 치료를 결정합니다.",
+      "references": ["diagnosis", "symptoms"]
+    },
+    {
+      "id": 52024, "category": "청소년", "title": "미자 여유증 수술",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52024",
+      "publishedAt": "2026-10-17", "context": "초음파 검사 후 6개월이 지났으며 수술을 위해 바로 방문해도 되는지 질문.",
+      "answer": "사춘기 여유증은 자연히 줄기도 합니다. 6개월 전 검사만으로 결정하지 않고 현재 상태를 다시 평가합니다.",
+      "references": ["diagnosis"]
+    },
+    {
+      "id": 52036, "category": "통증", "title": "한쪽만 존나 아픈데 여유증인가",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52036",
+      "publishedAt": "2026-10-18", "context": "한쪽 유두 안쪽의 갑작스러운 통증과 부은 느낌을 호소.",
+      "answer": "한쪽 통증만으로 여유증이라 단정할 수 없습니다. 붓기·덩이·분비물·피부 변화가 있으면 진료로 확인합니다.",
+      "references": ["symptoms", "diagnosis"]
+    },
+    {
+      "id": 52072, "category": "검사·수술", "title": "유선크기",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52072",
+      "publishedAt": "2026-10-20", "context": "유선 치수를 적고 큰 편인지 질문. 본문에는 단위가 없음.",
+      "answer": "숫자만으로 심한 정도나 수술 필요성을 정하진 않습니다. 측정 단위·증상·지방·피부 상태를 함께 봅니다.",
+      "references": ["diagnosis"]
+    },
+    {
+      "id": 26610, "category": "함몰", "title": "수술 3주차 유륜 패임 함몰 질문",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=26610",
+      "publishedAt": "2024-03-16", "context": "수술 3주 후 한쪽 유륜이 패이는 것 같아 마사지 외 대처와 재수술 여부를 질문.",
+      "answer": "3주차 모습만으로 최종 결과를 판단하긴 이릅니다. 붓기·유착·조직 결손을 진찰하고 교정 시점을 정합니다.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52079, "category": "붓기·장액종", "title": "수술5주차다 ㅜ",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52079",
+      "publishedAt": "2026-10-20", "context": "5주차에 오른쪽 윗가슴이 물찬 느낌이며 비대칭 붓기인지 장액종인지 질문.",
+      "answer": "양쪽 붓기는 다르게 빠질 수 있지만 장액종과 구분해야 합니다. 물찬 느낌이 지속되면 수술 병원에서 확인합니다.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52061, "category": "흉터", "title": "찌찌혐) 유륜아래 수술흉터 없어지냐",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52061",
+      "publishedAt": "2026-10-19", "context": "한쪽 유륜 아래 수술흉터가 벌어져 보여 없어지는지 질문.",
+      "answer": "흉터는 옅어질 수 있지만 완전히 사라진다고 보장하진 못합니다. 상처가 벌어진 상태라면 먼저 진찰이 필요합니다.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52040, "category": "출혈·상처", "title": "혹시 10일차에 피난 사람 있음? 조언좀",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52040",
+      "publishedAt": "2026-10-18", "context": "스트레칭 뒤 봉합 부위 주변 출혈과 유두 딱지·소량 진물을 호소하며 운동 여부를 질문.",
+      "answer": "딱지를 뜯거나 상처를 당기는 운동은 피하고 병원에 연락하세요. 출혈이 멎지 않거나 붓기·열감이 커지면 바로 진료받으세요.",
+      "references": ["risks", "recovery"]
+    },
+    {
+      "id": 52043, "category": "일상 복귀", "title": "수술후 2일차에 버스탈수있냐?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52043",
+      "publishedAt": "2026-10-18", "context": "수술 이틀 후 버스에서 서서 이동해도 되는지 질문.",
+      "answer": "이틀 지났다고 모두 같은 상태는 아닙니다. 통증·어지럼과 팔에 가는 힘을 고려해 무리한 이동을 피하세요.",
+      "references": ["recovery"]
+    },
+    {
+      "id": 52060, "category": "음주·활동", "title": "수술하고 언제부터 술 마시고 놀았음 다들?",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52060",
+      "publishedAt": "2026-10-19", "context": "수술 4~5주 후 음주와 성관계 등 활동 재개가 가능한지 질문.",
+      "answer": "4~5주라는 기간만으로 음주·활동을 허용하진 않습니다. 복용약과 상처 회복을 확인하고 수술 병원 지침을 따르세요.",
+      "references": ["recovery"]
+    },
+    {
+      "id": 52059, "category": "재수술", "title": "꼭지 때문에 여유증 재수술함",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&no=52059",
+      "publishedAt": "2026-10-19", "context": "3년 전 수술 후 감량해도 유두 쪽 돌출이 남아 재수술했다는 경험담.",
+      "answer": "다시 돌출됐다고 모두 재발은 아닙니다. 남은 유선·지방·흉터조직·유두 자체를 구분해 재수술을 판단합니다.",
+      "references": ["recovery", "risks"]
+    }
+  ]
+}
