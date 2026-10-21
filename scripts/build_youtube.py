@@ -65,7 +65,7 @@ options = ''.join(f'<option>{esc(c)}</option>' for c in categories)
 editor = (ROOT / 'comment-editor.html').read_text(encoding='utf-8')
 html = f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>유튜브 댓글 Q&A · 하이스트</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="youtube.css"><link rel="stylesheet" href="comment-editor.css"><script src="youtube.js" defer></script><script src="comment-editor.js" defer></script><script src="platform.js" defer></script></head><body>
 <a class="skip-link" href="#youtube-list">질문 목록으로 이동</a><div class="page">
-<header class="masthead"><img class="logo" src="assets/highst-logo.png" alt="하이스트 비뇨의학과"><div class="page-label"><h1>유튜브 댓글 Q&A</h1><span>황인성 원장</span></div><a class="open-all" href="assets/youtube/youtube-qna-images.zip" download>원본 캡처 전체 ZIP ↓</a></header>
+<header class="masthead"><img class="logo" src="assets/highst-logo.png" alt="하이스트 비뇨의학과"><div class="page-label"><h1>유튜브 댓글 Q&A</h1><span>황인성 원장</span></div><div class="header-actions"><button class="group-button" id="open-group" type="button">새 그룹으로 열기</button><a class="open-all" href="assets/youtube/youtube-qna-images.zip" download>원본 캡처 전체 ZIP ↓</a></div></header>
 <nav class="source-nav" aria-label="질문 출처"><a href="index.html">디시</a><a href="youtube.html" aria-current="page">유튜브</a><a href="instagram.html">인스타</a></nav>
 {editor}
 <div class="youtube-intro"><p><strong>닥터 황의 인성수업 · 실제 댓글 {len(cards)}개</strong><br>감량·진단 → 수술 → 회복·재수술 질문을 촬영용으로 정리했습니다.</p><p>2026.10.21 확인 · 최근~약 5개월 전 게시 댓글 중 선별<br>제목은 질문 요약, 답변 대신 원장님께 여쭐 촬영 포인트입니다.</p></div>
