@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "하이스트 촬영 노트 · 탭 그룹",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "하이스트 촬영 노트의 현재 질문 목록을 새 브라우저 탭 그룹으로 엽니다.",
   "permissions": ["tabGroups"],
   "background": {"service_worker": "background.js"},
   "content_scripts": [{
-    "matches": ["https://notoow.github.io/dc-Gynecomastia-contents/*"],
+    "matches": ["https://notoow.github.io/gynecomastia-contents/*"],
     "js": ["content.js"],
     "run_at": "document_idle"
   }]

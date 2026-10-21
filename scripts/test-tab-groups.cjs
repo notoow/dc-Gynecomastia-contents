@@ -14,7 +14,7 @@ function setup(failAt = 0) {
     remove:async id=>{calls.removed.push(id)}
   },tabGroups:{update:async(id,data)=>{calls.updates.push({id,...data})}}};
   vm.runInNewContext(code,{chrome,URL});
-  const sender={id:'test-extension',tab:{windowId:9},url:'https://notoow.github.io/dc-Gynecomastia-contents/'};
+  const sender={id:'test-extension',tab:{windowId:9},url:'https://notoow.github.io/gynecomastia-contents/'};
   const send=(message,who=sender)=>new Promise(resolve=>listener(message,who,resolve));
   return {calls,sender,send};
 }

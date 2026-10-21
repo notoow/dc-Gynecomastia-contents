@@ -5,7 +5,7 @@ function validSender(sender) {
     const url = new URL(sender.url);
     return sender.id === chrome.runtime.id && Number.isInteger(sender.tab?.windowId)
       && url.origin === 'https://notoow.github.io'
-      && url.pathname.startsWith('/dc-Gynecomastia-contents/');
+      && url.pathname.startsWith('/gynecomastia-contents/');
   } catch { return false; }
 }
 

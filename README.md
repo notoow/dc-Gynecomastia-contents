@@ -56,7 +56,7 @@ python scripts/build.py
 
 GitHub Pages: `main` 브랜치의 루트(`/`)를 게시합니다. `.nojekyll`로 정적 파일을 그대로 제공합니다.
 
-사이트: https://notoow.github.io/dc-Gynecomastia-contents/
+사이트: https://notoow.github.io/gynecomastia-contents/
 
 ## 확인한 동작
 
