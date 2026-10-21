@@ -9,6 +9,7 @@
   <link rel="icon" href="assets/highst-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script src="platform.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#questions">질문 목록으로 이동</a>
@@ -16,72 +17,73 @@
     <header class="masthead">
       <img class="logo" src="assets/highst-logo.png" alt="하이스트 비뇨의학과" width="1065" height="302">
       <div class="page-label"><h1>여유증 Q&A</h1><span>황인성 원장</span></div>
-      <button class="open-all" id="open-all" type="button">게시글 전체 열기 <span aria-hidden="true">↗</span></button>
+      <div class="header-actions"><button class="group-button" id="open-group" type="button">새 그룹으로 열기</button><button class="open-all" id="open-all" type="button">게시글 전체 열기 <span aria-hidden="true">↗</span></button></div>
     </header>
-    <div class="index-meta"><p>디시인사이드 여유증 갤러리 <span class="count">12문항</span></p><p>원문 제목 · 예상 답변 초안</p></div>
+    <nav class="source-nav" aria-label="질문 출처"><a href="index.html" aria-current="page">디시</a><a href="youtube.html">유튜브</a><a href="instagram.html">인스타</a></nav>
+    <div class="index-meta"><div class="month-controls"><label for="month-filter">게시월</label><select id="month-filter"><option value="2026-10">2026년 10월</option><option value="2024-03">2024년 3월</option><option value="all">전체 게시월</option></select><span class="count" id="post-count">11문항</span></div><p>원문 제목 · 예상 답변 초안</p></div>
     <aside class="popup-notice" id="popup-notice" aria-labelledby="popup-heading" hidden>
       <div><strong id="popup-heading">브라우저가 일부 새 탭을 차단했습니다.</strong><p>주소창의 팝업 차단 아이콘에서 이 사이트를 허용한 뒤 다시 눌러주세요. 아래 링크로 개별 열기도 가능합니다.</p></div>
       <button type="button" class="text-button" id="dismiss-notice">닫기</button>
       <ul id="blocked-links"></ul>
     </aside>
     <main id="questions" class="questions" aria-label="실제 게시글과 예상 답변">
-      <article class="question" data-post-id="52064">
-        <div class="question-meta"><span class="number">01</span><span>자가진단</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52064" target="_blank" rel="noopener noreferrer" aria-label="이거 여유증임?? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52064" data-month="2026-10">
+        <div class="question-meta"><span class="number">01</span><span>자가진단</span><time datetime="2026-10-19">2026.10.19</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52064" target="_blank" rel="noopener noreferrer" aria-label="이거 여유증임?? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52064" target="_blank" rel="noopener noreferrer">이거 여유증임??</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>사진만으로 지방과 유선조직을 구분하긴 어렵습니다. 진찰 후 필요하면 초음파 등으로 확인합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52063">
-        <div class="question-meta"><span class="number">02</span><span>운동·치료</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52063" target="_blank" rel="noopener noreferrer" aria-label="진성여유증은 뭘해도안없어짐??? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52063" data-month="2026-10">
+        <div class="question-meta"><span class="number">02</span><span>운동·치료</span><time datetime="2026-10-19">2026.10.19</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52063" target="_blank" rel="noopener noreferrer" aria-label="진성여유증은 뭘해도안없어짐??? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52063" target="_blank" rel="noopener noreferrer">진성여유증은 뭘해도안없어짐???</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>운동은 지방을 줄여도 유선조직을 직접 없애진 못합니다. 초기에는 원인과 경과를 보고 치료를 결정합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52024">
-        <div class="question-meta"><span class="number">03</span><span>청소년</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52024" target="_blank" rel="noopener noreferrer" aria-label="미자 여유증 수술 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52024" data-month="2026-10">
+        <div class="question-meta"><span class="number">03</span><span>청소년</span><time datetime="2026-10-17">2026.10.17</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52024" target="_blank" rel="noopener noreferrer" aria-label="미자 여유증 수술 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52024" target="_blank" rel="noopener noreferrer">미자 여유증 수술</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>사춘기 여유증은 자연히 줄기도 합니다. 6개월 전 검사만으로 결정하지 않고 현재 상태를 다시 평가합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52036">
-        <div class="question-meta"><span class="number">04</span><span>통증</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52036" target="_blank" rel="noopener noreferrer" aria-label="한쪽만 존나 아픈데 여유증인가 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52036" data-month="2026-10">
+        <div class="question-meta"><span class="number">04</span><span>통증</span><time datetime="2026-10-18">2026.10.18</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52036" target="_blank" rel="noopener noreferrer" aria-label="한쪽만 존나 아픈데 여유증인가 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52036" target="_blank" rel="noopener noreferrer">한쪽만 존나 아픈데 여유증인가</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>한쪽 통증만으로 여유증이라 단정할 수 없습니다. 붓기·덩이·분비물·피부 변화가 있으면 진료로 확인합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52072">
-        <div class="question-meta"><span class="number">05</span><span>검사·수술</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52072" target="_blank" rel="noopener noreferrer" aria-label="유선크기 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52072" data-month="2026-10">
+        <div class="question-meta"><span class="number">05</span><span>검사·수술</span><time datetime="2026-10-20">2026.10.20</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52072" target="_blank" rel="noopener noreferrer" aria-label="유선크기 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52072" target="_blank" rel="noopener noreferrer">유선크기</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>숫자만으로 심한 정도나 수술 필요성을 정하진 않습니다. 측정 단위·증상·지방·피부 상태를 함께 봅니다.</p></div>
       </article>
-      <article class="question" data-post-id="26610">
-        <div class="question-meta"><span class="number">06</span><span>함몰</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=26610" target="_blank" rel="noopener noreferrer" aria-label="수술 3주차 유륜 패임 함몰 질문 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="26610" data-month="2024-03" hidden>
+        <div class="question-meta"><span class="number">06</span><span>함몰</span><time datetime="2024-03-16">2024.03.16</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=26610" target="_blank" rel="noopener noreferrer" aria-label="수술 3주차 유륜 패임 함몰 질문 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=26610" target="_blank" rel="noopener noreferrer">수술 3주차 유륜 패임 함몰 질문</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>3주차 모습만으로 최종 결과를 판단하긴 이릅니다. 붓기·유착·조직 결손을 진찰하고 교정 시점을 정합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52079">
-        <div class="question-meta"><span class="number">07</span><span>붓기·장액종</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52079" target="_blank" rel="noopener noreferrer" aria-label="수술5주차다 ㅜ 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52079" data-month="2026-10">
+        <div class="question-meta"><span class="number">07</span><span>붓기·장액종</span><time datetime="2026-10-20">2026.10.20</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52079" target="_blank" rel="noopener noreferrer" aria-label="수술5주차다 ㅜ 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52079" target="_blank" rel="noopener noreferrer">수술5주차다 ㅜ</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>양쪽 붓기는 다르게 빠질 수 있지만 장액종과 구분해야 합니다. 물찬 느낌이 지속되면 수술 병원에서 확인합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52061">
-        <div class="question-meta"><span class="number">08</span><span>흉터</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52061" target="_blank" rel="noopener noreferrer" aria-label="찌찌혐) 유륜아래 수술흉터 없어지냐 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52061" data-month="2026-10">
+        <div class="question-meta"><span class="number">08</span><span>흉터</span><time datetime="2026-10-19">2026.10.19</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52061" target="_blank" rel="noopener noreferrer" aria-label="찌찌혐) 유륜아래 수술흉터 없어지냐 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52061" target="_blank" rel="noopener noreferrer">찌찌혐) 유륜아래 수술흉터 없어지냐</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>흉터는 옅어질 수 있지만 완전히 사라진다고 보장하진 못합니다. 상처가 벌어진 상태라면 먼저 진찰이 필요합니다.</p></div>
       </article>
-      <article class="question" data-post-id="52040">
-        <div class="question-meta"><span class="number">09</span><span>출혈·상처</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52040" target="_blank" rel="noopener noreferrer" aria-label="혹시 10일차에 피난 사람 있음? 조언좀 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52040" data-month="2026-10">
+        <div class="question-meta"><span class="number">09</span><span>출혈·상처</span><time datetime="2026-10-18">2026.10.18</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52040" target="_blank" rel="noopener noreferrer" aria-label="혹시 10일차에 피난 사람 있음? 조언좀 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52040" target="_blank" rel="noopener noreferrer">혹시 10일차에 피난 사람 있음? 조언좀</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>딱지를 뜯거나 상처를 당기는 운동은 피하고 병원에 연락하세요. 출혈이 멎지 않거나 붓기·열감이 커지면 바로 진료받으세요.</p></div>
       </article>
-      <article class="question" data-post-id="52043">
-        <div class="question-meta"><span class="number">10</span><span>일상 복귀</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52043" target="_blank" rel="noopener noreferrer" aria-label="수술후 2일차에 버스탈수있냐? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52043" data-month="2026-10">
+        <div class="question-meta"><span class="number">10</span><span>일상 복귀</span><time datetime="2026-10-18">2026.10.18</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52043" target="_blank" rel="noopener noreferrer" aria-label="수술후 2일차에 버스탈수있냐? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52043" target="_blank" rel="noopener noreferrer">수술후 2일차에 버스탈수있냐?</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>이틀 지났다고 모두 같은 상태는 아닙니다. 통증·어지럼과 팔에 가는 힘을 고려해 무리한 이동을 피하세요.</p></div>
       </article>
-      <article class="question" data-post-id="52060">
-        <div class="question-meta"><span class="number">11</span><span>음주·활동</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52060" target="_blank" rel="noopener noreferrer" aria-label="수술하고 언제부터 술 마시고 놀았음 다들? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52060" data-month="2026-10">
+        <div class="question-meta"><span class="number">11</span><span>음주·활동</span><time datetime="2026-10-19">2026.10.19</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52060" target="_blank" rel="noopener noreferrer" aria-label="수술하고 언제부터 술 마시고 놀았음 다들? 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52060" target="_blank" rel="noopener noreferrer">수술하고 언제부터 술 마시고 놀았음 다들?</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>4~5주라는 기간만으로 음주·활동을 허용하진 않습니다. 복용약과 상처 회복을 확인하고 수술 병원 지침을 따르세요.</p></div>
       </article>
-      <article class="question" data-post-id="52059">
-        <div class="question-meta"><span class="number">12</span><span>재수술</span><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52059" target="_blank" rel="noopener noreferrer" aria-label="꼭지 때문에 여유증 재수술함 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
+      <article class="question" data-post-id="52059" data-month="2026-10">
+        <div class="question-meta"><span class="number">12</span><span>재수술</span><time datetime="2026-10-19">2026.10.19</time><a class="source-link" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52059" target="_blank" rel="noopener noreferrer" aria-label="꼭지 때문에 여유증 재수술함 원문 새 탭에서 열기">원문 <span aria-hidden="true">↗</span></a></div>
         <h2><a class="post-title" href="https://gall.dcinside.com/mgallery/board/view/?id=dudbwmd&amp;no=52059" target="_blank" rel="noopener noreferrer">꼭지 때문에 여유증 재수술함</a></h2>
         <div class="answer"><span class="answer-label">예상 답변</span><p>다시 돌출됐다고 모두 재발은 아닙니다. 남은 유선·지방·흉터조직·유두 자체를 구분해 재수술을 판단합니다.</p></div>
       </article>

@@ -1,12 +1,15 @@
 'use strict';
 
-const links = [...document.querySelectorAll('.source-link')];
+const allLinks = [...document.querySelectorAll('.source-link')];
+const questions = [...document.querySelectorAll('.question')];
+const monthFilter = document.getElementById('month-filter');
 const openedTabs = new Map();
 const status = document.getElementById('status');
 const notice = document.getElementById('popup-notice');
 const blockedList = document.getElementById('blocked-links');
 
 document.getElementById('open-all').addEventListener('click', () => {
+  const links = allLinks.filter(link => !link.closest('article').hidden);
   const blocked = [];
   let opened = 0;
   for (const link of links) {
@@ -47,6 +50,23 @@ document.getElementById('open-all').addEventListener('click', () => {
     ? `${links.length}개 중 ${opened}개 열림 · ${blocked.length}개 차단됨. 팝업 허용 후 다시 눌러주세요.`
     : `${opened}개 게시글 탭이 준비되었습니다.`;
 });
+
+function filterMonth() {
+  let count = 0;
+  for (const question of questions) {
+    question.hidden = monthFilter.value !== 'all' && question.dataset.month !== monthFilter.value;
+    if (!question.hidden) {
+      count++;
+      question.querySelector('.number').textContent = String(count).padStart(2, '0');
+    }
+  }
+  document.getElementById('post-count').textContent = `${count}문항`;
+  notice.hidden = true;
+  status.textContent = '';
+  document.getElementById('questions').classList.toggle('short-list', count <= 3);
+}
+monthFilter.addEventListener('change', filterMonth);
+filterMonth();
 
 document.getElementById('dismiss-notice').addEventListener('click', () => {
   notice.hidden = true;
